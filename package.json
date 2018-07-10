@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start":"node test/test.js",
+    "start": "node test/test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ltinyho/eolinker-api-generator/issues"
   },
-  "homepage": "https://github.com/ltinyho/eolinker-api-generator#readme"
+  "homepage": "https://github.com/ltinyho/eolinker-api-generator#readme",
+  "dependencies": {
+    "path-to-regexp": "^2.2.1"
+  }
 }
