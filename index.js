@@ -12,17 +12,17 @@ function geneParam(params) {
   return params.map(item => item.paramKey).join(', ');
 }
 
-function geneComment({ apiName, params }) {
+function geneComment({ commentName, funcParams }) {
   let str = '';
-  params.forEach((item, i) => {
-    str += `   * @param { ${paramsType[+item.paramType]} } ${item.paramKey} - ${item.paramName}${i !== params.length - 1 ? '\n' : ''}`;
+  funcParams.forEach((item, i) => {
+    str += `   * @param { ${paramsType[+item.paramType]} } ${item.paramKey} - ${item.paramName}${i !== funcParams.length - 1 ? '\n' : ''}`;
   });
   if (str) {
     str = `\n${str}`;
   }
   const tpl = `
    /**
-   * ${apiName}${str}
+   * ${commentName}${str}
    * @return {Promise<any>}
    */`;
   return tpl;
@@ -32,8 +32,9 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   let tpl = '';
   let funcPa = geneParam(funcParams);
   let dataPa = geneParam(params);
-  dataPa = dataPa ? `{ ${dataPa} }` : '';
   funcPa = funcPa ? `{ ${funcPa} }` : '';
+  dataPa = dataPa ? `{ ${dataPa} }` : '';
+  console.log(funcPa,dataPa);
   const comment = geneComment({ commentName, funcParams });
   if (type === 0) {
     tpl = `
@@ -41,7 +42,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   static ${funcName}(${funcPa}) {
     return xhr({
       method: 'post',
-      url: '${url}',
+      url: \`${url}\`,
       data: ${dataPa || '{}'},
     })
   }`;
@@ -50,7 +51,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   ${comment}  
   static ${funcName}(${funcPa}) {
     return xhr({
-      url: '${url}',
+      url: \`${url}\`,
       params: ${dataPa || '{}'},
     })
   }`;
@@ -59,9 +60,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
 }
 
 function normalGeneXhr({ type, uri, params, apiName }) {
-  let tpl = '';
   const name = uri.substr(uri.lastIndexOf('/') + 1);
-  const comment = geneComment({ apiName, params });
   return baseGeneXhr({
     type,
     url: uri,
@@ -81,21 +80,20 @@ function restGeneXhr({ type, uri, params, apiName }) {
   const commentName = nameArray[0];
   const funcName = nameArray[nameArray.length - 1];
 
-  let keys = [];
-  const res = pathToRegexp(uri, keys);
-  let toPath = pathToRegexp.compile(uri);
+  let pathParamKeys = [];
+  pathToRegexp(uri, pathParamKeys);
+  const toPath = pathToRegexp.compile(uri);
 
-  let pathKeys = {};
-  keys.forEach(item => {
-    pathKeys[item.name] = `$\{${item.name}\}`;
+  const urlPathKeys = {};
+  pathParamKeys.forEach(item => {
+    urlPathKeys[item.name] = `$\{${item.name}\}`;
   });
   // 请求路径
-  const url = toPath(pathKeys, { encode: (value, token) => value });
-  const keysParam = params.map(item => item.name);
-  const paramList = keys.filter(item => {
-    return !keysParam.includes(item.paramKey);
+  const url = toPath(urlPathKeys, { encode: (value, token) => value });
+  const pathParamKeysList = pathParamKeys.map(item => item.name);
+  const paramList = params.filter(item => {
+    return !pathParamKeysList.includes(item.paramKey);
   });
-  console.log(paramList);
   return baseGeneXhr({
     type,
     url,
@@ -126,13 +124,13 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     const apiList = JSON.parse(data.toString());
     let strs = '';
     apiList.forEach((item) => {
-      const { baseInfo, requestInfo } = item;
+      const { baseInfo, requestInfo,restfulParam } = item;
       const { apiName, apiURI, apiRequestType } = baseInfo;
       const str = geneXhr({
         apiName,
         type: apiRequestType,
         uri: apiURI,
-        params: requestInfo,
+        params: [...requestInfo,...restfulParam],
       });
       strs += str;
     });

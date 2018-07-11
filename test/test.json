@@ -60,7 +60,7 @@
   {
     "baseInfo": {
       "apiName": "\u83b7\u53d6\u7ae0\u5217\u8868-chapterList",
-      "apiURI": "\/subjects\/:subjectID\/chapters\/:id",
+      "apiURI": "\/subjects\/:subjectID\/chapters",
       "apiProtocol": 0,
       "apiSuccessMock": "",
       "apiFailureMock": "",
@@ -117,7 +117,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u83b7\u53d6\u8282\u5217\u8868",
+      "apiName": "\u83b7\u53d6\u8282\u5217\u8868-sectionList",
       "apiURI": "\/chapters\/:chapterID\/sections",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -134,13 +134,24 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": null,
       "afterInject": null,
-      "apiUpdateTime": "2018-07-06 15:50:42"
+      "apiUpdateTime": "2018-07-11 10:12:58"
     },
     "headerInfo": [],
     "authInfo": {
       "status": "0"
     },
-    "requestInfo": [],
+    "requestInfo": [{
+      "paramNotNull": "0",
+      "paramType": "3",
+      "paramName": "\u9898\u76ee\u7f16\u53f7",
+      "paramKey": "questionId",
+      "paramValue": "336124",
+      "paramLimit": "",
+      "paramNote": "",
+      "paramValueList": [],
+      "default": 0,
+      "$index": 0
+    }],
     "resultInfo": [],
     "urlParam": [],
     "restfulParam": [
@@ -175,7 +186,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u83b7\u53d6\u7ae0\u4e0b\u9898\u76ee\u5217\u8868",
+      "apiName": "\u83b7\u53d6\u7ae0\u4e0b\u9898\u76ee\u5217\u8868-chapterQuestions",
       "apiURI": "\/chapters\/:chapterID\/questions",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -192,7 +203,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": null,
       "afterInject": null,
-      "apiUpdateTime": "2018-07-06 15:59:38"
+      "apiUpdateTime": "2018-07-11 10:13:33"
     },
     "headerInfo": [],
     "authInfo": {
@@ -233,7 +244,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u83b7\u53d6\u8282\u4e0b\u9898\u76ee\u5217\u8868",
+      "apiName": "\u83b7\u53d6\u8282\u4e0b\u9898\u76ee\u5217\u8868-sectionQuestions",
       "apiURI": "\/sections\/:sectionID\/questions",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -250,7 +261,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": "",
       "afterInject": "",
-      "apiUpdateTime": "2018-07-10 09:37:43"
+      "apiUpdateTime": "2018-07-11 10:13:49"
     },
     "headerInfo": [],
     "authInfo": {
@@ -291,7 +302,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u7b54\u9898\u8bb0\u5f55",
+      "apiName": "\u7b54\u9898\u8bb0\u5f55-questionRecord",
       "apiURI": "\/question\/record",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -308,7 +319,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": null,
       "afterInject": null,
-      "apiUpdateTime": "2018-07-09 14:10:09"
+      "apiUpdateTime": "2018-07-11 10:14:18"
     },
     "headerInfo": [],
     "authInfo": {
@@ -381,7 +392,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u6536\u85cf\u9898\u76ee",
+      "apiName": "\u6536\u85cf\u9898\u76ee-collectQuestion",
       "apiURI": "\/question\/favorites",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -398,7 +409,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": null,
       "afterInject": null,
-      "apiUpdateTime": "2018-07-09 14:37:13"
+      "apiUpdateTime": "2018-07-11 10:14:36"
     },
     "headerInfo": [],
     "authInfo": {
@@ -438,7 +449,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u53d6\u6d88\u6536\u85cf",
+      "apiName": "\u53d6\u6d88\u6536\u85cf-cancleCollectQuestion",
       "apiURI": "\/question\/unFavorites",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -455,7 +466,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": "",
       "afterInject": "",
-      "apiUpdateTime": "2018-07-09 14:37:45"
+      "apiUpdateTime": "2018-07-11 10:15:05"
     },
     "headerInfo": [],
     "authInfo": {
@@ -478,7 +489,13 @@
     "urlParam": [],
     "restfulParam": [],
     "mockInfo": {
-      "rule": null,
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
       "result": "{}",
       "mockConfig": {
         "type": "object",
@@ -489,7 +506,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u6a21\u62df\u8bd5\u5377\u5217\u8868",
+      "apiName": "\u6a21\u62df\u8bd5\u5377\u5217\u8868-mockExamList",
       "apiURI": "\/subjects\/:subjectID\/examMocks",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -506,7 +523,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": null,
       "afterInject": null,
-      "apiUpdateTime": "2018-07-10 15:01:37"
+      "apiUpdateTime": "2018-07-11 10:16:28"
     },
     "headerInfo": [],
     "authInfo": {
@@ -547,7 +564,7 @@
   },
   {
     "baseInfo": {
-      "apiName": "\u83b7\u53d6\u4e00\u4e2a\u6a21\u62df\u8bd5\u5377\u7684\u8be6\u60c5",
+      "apiName": "\u83b7\u53d6\u4e00\u4e2a\u6a21\u62df\u8bd5\u5377\u7684\u8be6\u60c5-mockExamInfo",
       "apiURI": "\/examMock\/:ID\/info",
       "apiProtocol": 0,
       "apiSuccessMock": "",
@@ -564,7 +581,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": "",
       "afterInject": "",
-      "apiUpdateTime": "2018-07-10 15:01:29"
+      "apiUpdateTime": "2018-07-11 10:16:49"
     },
     "headerInfo": [],
     "authInfo": {
