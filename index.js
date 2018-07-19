@@ -5,6 +5,7 @@ const paramsType = {
   0: 'string',
   3: 'number',
   12: 'array[number]',
+  13: 'object',
 };
 
 function geneParam(params) {
@@ -34,7 +35,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   let dataPa = geneParam(params);
   funcPa = funcPa ? `{ ${funcPa} }` : '';
   dataPa = dataPa ? `{ ${dataPa} }` : '';
-  console.log(funcPa,dataPa);
+  console.log(funcPa, dataPa);
   const comment = geneComment({ commentName, funcParams });
   if (type === 0) {
     tpl = `
@@ -124,13 +125,13 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     const apiList = JSON.parse(data.toString());
     let strs = '';
     apiList.forEach((item) => {
-      const { baseInfo, requestInfo,restfulParam } = item;
+      const { baseInfo, requestInfo, restfulParam } = item;
       const { apiName, apiURI, apiRequestType } = baseInfo;
       const str = geneXhr({
         apiName,
         type: apiRequestType,
         uri: apiURI,
-        params: [...requestInfo,...restfulParam],
+        params: [...requestInfo, ...restfulParam].filter(item => !item.paramKey.includes('>>')),
       });
       strs += str;
     });
