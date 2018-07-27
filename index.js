@@ -6,6 +6,7 @@ const paramsType = {
   3: 'number',
   12: 'array[number]',
   13: 'object',
+  14: 'number',
 };
 
 function geneParam(params) {
@@ -83,7 +84,6 @@ function restGeneXhr({ type, uri, params, apiName }) {
   let pathParamKeys = [];
   pathToRegexp(uri, pathParamKeys);
   const toPath = pathToRegexp.compile(uri);
-
   const urlPathKeys = {};
   pathParamKeys.forEach(item => {
     urlPathKeys[item.name] = `$\{${item.name}\}`;
@@ -136,7 +136,7 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     });
 
     fs.writeFileSync(`${outputPath}/${outputFile}.js`, `
-import xhr from 'lt-xhr';
+import xhr from './xhr/xhr';
 
 export default class ${className}{
   ${strs}
