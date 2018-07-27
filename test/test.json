@@ -18,7 +18,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": null,
       "afterInject": null,
-      "apiUpdateTime": "2018-07-11 15:03:49"
+      "apiUpdateTime": "2018-07-23 16:13:42"
     },
     "headerInfo": [],
     "authInfo": {
@@ -26,7 +26,30 @@
     },
     "requestInfo": [],
     "resultInfo": [],
-    "urlParam": [],
+    "urlParam": [
+      {
+        "paramNotNull": "0",
+        "paramName": "\u8bd5\u5377\u7c7b\u578b(-1 \u4e0d\u9650 1 \u6a21\u62df\u5377 2 \u771f\u9898\u5377)",
+        "paramKey": "examType",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramName": "\u662f\u5426\u5df2\u505a(-1 \u4e0d\u9650 0 \u672a\u505a 1 \u5df2\u505a)",
+        "paramKey": "hasDone",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      }
+    ],
     "restfulParam": [
       {
         "paramNotNull": "0",
@@ -76,7 +99,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": "",
       "afterInject": "",
-      "apiUpdateTime": "2018-07-17 10:59:36"
+      "apiUpdateTime": "2018-07-20 11:04:05"
     },
     "headerInfo": [],
     "authInfo": {
@@ -91,7 +114,7 @@
         "paramType": "3",
         "paramName": "\u6a21\u62df\u8bd5\u5377id",
         "paramKey": "id",
-        "paramValue": "88159",
+        "paramValue": "115545",
         "paramLimit": "",
         "paramNote": "",
         "paramValueList": [],
@@ -134,7 +157,7 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": null,
       "afterInject": null,
-      "apiUpdateTime": "2018-07-19 11:47:02"
+      "apiUpdateTime": "2018-07-19 17:56:28"
     },
     "headerInfo": [],
     "authInfo": {
@@ -959,7 +982,7 @@
       "apiSuccessMock": "",
       "apiFailureMock": "",
       "apiRequestType": 0,
-      "apiStatus": 4,
+      "apiStatus": 0,
       "starred": 0,
       "apiNoteType": 0,
       "apiNoteRaw": "",
