@@ -123,7 +123,7 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     if (err) throw err;
     const apiList = JSON.parse(data.toString());
     let strs = '';
-    apiList.forEach((item) => {
+    apiList.filter(item => item.baseInfo.apiStatus === 0).forEach((item) => {
       const { baseInfo, requestInfo, restfulParam, urlParam } = item;
       const { apiName, apiURI, apiRequestType } = baseInfo;
       const str = geneXhr({
