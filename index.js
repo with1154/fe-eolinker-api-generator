@@ -3,11 +3,36 @@ const path = require('path');
 const pathToRegexp = require('path-to-regexp');
 const paramsType = {
   0: 'string',
-  3: 'number',
-  12: 'array[number]',
+  1: 'file',
+  2: 'json',
+  3: 'int',
+  4: 'float',
+  5: 'double',
+  6: 'date',
+  7: 'datetime',
+  8: 'boolean',
+  9: 'byte',
+  10: 'short',
+  11: 'long',
+  12: 'array',
   13: 'object',
   14: 'number',
 };
+
+const apiStatus = {
+  0: '启动',
+  1: '维护',
+  2: '弃用',
+  3: '待定',
+  4: '开发',
+  5: '测试',
+  6: '对接',
+  7: 'BUG',
+};
+
+function apiFilter(api) {
+  return [0, 6].includes(api.baseInfo.apiStatus);
+}
 
 function geneParam(params) {
   if (!params.length) return null;
@@ -123,7 +148,7 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     if (err) throw err;
     const apiList = JSON.parse(data.toString());
     let strs = '';
-    apiList.filter(item => item.baseInfo.apiStatus === 0).forEach((item) => {
+    apiList.filter(apiFilter).forEach((item) => {
       const { baseInfo, requestInfo, restfulParam, urlParam } = item;
       const { apiName, apiURI, apiRequestType } = baseInfo;
       const str = geneXhr({
@@ -136,7 +161,7 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     });
 
     fs.writeFileSync(`${outputPath}/${outputFile}.js`, `
-import xhr from './xhr/xhr';
+import xhr from '../xhr/microXhr';
 
 export default class ${className}{
   ${strs}

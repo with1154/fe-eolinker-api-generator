@@ -1,3 +1,4 @@
 .idea
 dist
 test/test.json
+node_modules
