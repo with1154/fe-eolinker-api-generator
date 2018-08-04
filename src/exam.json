@@ -807,14 +807,23 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": "",
       "afterInject": "",
-      "apiUpdateTime": "2018-07-19 11:38:30"
+      "apiUpdateTime": "2018-08-02 10:14:52"
     },
     "headerInfo": [],
     "authInfo": {
       "status": "0"
     },
     "requestInfo": [],
-    "resultInfo": [],
+    "resultInfo": [
+      {
+        "paramNotNull": "0",
+        "paramName": "0\u672a\u5f00\u653e 1\u5f00\u653e",
+        "paramKey": "status",
+        "paramType": "3",
+        "paramValueList": [],
+        "$index": 0
+      }
+    ],
     "urlParam": [],
     "restfulParam": [
       {
@@ -833,12 +842,17 @@
     "mockInfo": {
       "rule": [
         {
+          "paramKey": "status",
+          "paramType": "3",
+          "$index": 0
+        },
+        {
           "paramKey": "",
           "paramType": "0",
-          "$index": 0
+          "$index": 1
         }
       ],
-      "result": "{}",
+      "result": "{&quot;status&quot;:3667839749150612}",
       "mockConfig": {
         "type": "object",
         "rule": ""
@@ -993,13 +1007,653 @@
       "apiSuccessStatusCode": "200",
       "beforeInject": "",
       "afterInject": "",
-      "apiUpdateTime": "2018-07-17 16:36:48"
+      "apiUpdateTime": "2018-08-02 22:07:55"
     },
     "headerInfo": [],
     "authInfo": {
       "status": "0"
     },
-    "requestInfo": [],
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "13",
+        "paramName": "",
+        "paramKey": "examInfo",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "examInfo>>examID",
+        "paramValue": "116845",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "116845",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 1
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "examInfo>>hash",
+        "paramValue": "ce8a5cafaf0d00d6fa462008be7fb3e0",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "ce8a5cafaf0d00d6fa462008be7fb3e0",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 2
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "examInfo>>name",
+        "paramValue": "5-3\u65e5\u4f1a\u8ba1\u521d\u7ea7\u804c\u79f0\u8003\u8bd5\u300a\u7ecf\u6d4e\u6cd5\u57fa\u7840\u300b\u6a21\u8003\u8bd5\u5377",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "5-3\u65e5\u4f1a\u8ba1\u521d\u7ea7\u804c\u79f0\u8003\u8bd5\u300a\u7ecf\u6d4e\u6cd5\u57fa\u7840\u300b\u6a21\u8003\u8bd5\u5377",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 3
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "13",
+        "paramName": "",
+        "paramKey": "examInfo>>settings",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 4
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "examInfo>>settings>>endDate",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 5
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "examInfo>>settings>>startDate",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 6
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "examInfo>>settings>>timer",
+        "paramValue": "5400",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "5400",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 7
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "examInfo>>subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "5618",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 8
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "examInfo>>totalScore",
+        "paramValue": "95",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "95",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 9
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "12",
+        "paramName": "",
+        "paramKey": "part",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 10
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "13",
+        "paramName": "",
+        "paramKey": "part>>partInfo",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 11
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>partInfo>>id",
+        "paramValue": "442565",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "442565",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 12
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "part>>partInfo>>name",
+        "paramValue": "\u5355\u9009\u9898",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "\u5355\u9009\u9898",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 13
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "part>>partInfo>>remark",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 14
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "12",
+        "paramName": "",
+        "paramKey": "part>>question",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 15
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "12",
+        "paramName": "",
+        "paramKey": "part>>question>>answers",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 16
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>answers>>checked",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "1",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 17
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>answers>>id",
+        "paramValue": "260649",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "260649",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 18
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>id",
+        "paramValue": "206772",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "206772",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 19
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>isCorrect",
+        "paramValue": "0",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "0",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 20
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>isDone",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "1",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 21
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>isShowAnswer",
+        "paramValue": "0",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "0",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 22
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>partId",
+        "paramValue": "442565",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "442565",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 23
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>questTypeID",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "1",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 24
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "part>>question>>subQuests",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 25
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>question>>userScore",
+        "paramValue": "0",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "0",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 26
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "13",
+        "paramName": "",
+        "paramKey": "part>>state",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 27
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>state>>doneNum",
+        "paramValue": "21",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "21",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 28
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>state>>totalScore",
+        "paramValue": "35",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "35",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 29
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>state>>userScore",
+        "paramValue": "4",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "4",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 30
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "part>>state>>yesNum",
+        "paramValue": "3",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "3",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 31
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "13",
+        "paramName": "",
+        "paramKey": "result",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 32
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "result>>doneNum",
+        "paramValue": "35",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "35",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 33
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "result>>questNum",
+        "paramValue": "52",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "52",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 34
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "result>>totalScore",
+        "paramValue": "95",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "95",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 35
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "result>>userScore",
+        "paramValue": "9.5",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "9.5",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 36
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "result>>yesNum",
+        "paramValue": "10",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "10",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 37
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "13",
+        "paramName": "",
+        "paramKey": "state",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 38
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "state>>curIdx",
+        "paramValue": "50",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "50",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 39
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "state>>isEnd",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "1",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 40
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "state>>isShowAnswer",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "1",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 41
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "state>>isSubmit",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "1",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 42
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "14",
+        "paramName": "",
+        "paramKey": "state>>time",
+        "paramValue": "5360",
+        "paramLimit": "",
+        "paramValueList": [
+          {
+            "value": "5360",
+            "valueDescription": ""
+          }
+        ],
+        "default": 0,
+        "$index": 43
+      }
+    ],
     "resultInfo": [],
     "urlParam": [],
     "restfulParam": [
@@ -1168,7 +1822,7 @@
       "apiSuccessMock": "",
       "apiFailureMock": "",
       "apiRequestType": 1,
-      "apiStatus": 6,
+      "apiStatus": 0,
       "starred": 0,
       "apiNoteType": 0,
       "apiNoteRaw": "",
@@ -1208,6 +1862,64 @@
         "paramName": "",
         "paramKey": "subjectID",
         "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u6a21\u62df\u8bd5\u5377\u4fe1\u606f(\u4e0d\u5305\u542b\u8bd5\u5377\u5185\u5bb9)-getSimpleExamInfo",
+      "apiURI": "\/examMock\/:id",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-01 16:29:57"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "id",
+        "paramValue": "115545",
         "paramLimit": "",
         "paramNote": "",
         "paramValueList": [],

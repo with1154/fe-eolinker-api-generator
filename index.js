@@ -1,6 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 const pathToRegexp = require('path-to-regexp');
+const apiRequestType = {
+  POST: 0,
+  GET: 1,
+  PUT: 2,
+  DELETE: 3,
+  HEAD: 4,
+  OPTIONS: 5,
+  PATCH: 6,
+};
 const paramsType = {
   0: 'string',
   1: 'file',
@@ -30,6 +39,19 @@ const apiStatus = {
   7: 'BUG',
 };
 
+
+const API_TYPE = {
+  noraml: 'noraml',
+  rest: 'rest',
+};
+
+const defaultConfig = {
+  apiType: 'rest',
+  overwrite: true,
+  importHead: `import xhr from '../xhr/microXhr';`,
+};
+
+
 function apiFilter(api) {
   return [0, 6].includes(api.baseInfo.apiStatus);
 }
@@ -39,7 +61,7 @@ function geneParam(params) {
   return params.map(item => item.paramKey).join(', ');
 }
 
-function geneComment({ commentName, funcParams }) {
+function geneComment({commentName, funcParams}) {
   let str = '';
   funcParams.forEach((item, i) => {
     str += `   * @param { ${paramsType[+item.paramType]} } ${item.paramKey} - ${item.paramName}${i !== funcParams.length - 1 ? '\n' : ''}`;
@@ -55,14 +77,14 @@ function geneComment({ commentName, funcParams }) {
   return tpl;
 }
 
-function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
+function baseGeneXhr({type, url, funcParams, params, funcName, commentName}) {
   let tpl = '';
   let funcPa = geneParam(funcParams);
   let dataPa = geneParam(params);
   funcPa = funcPa ? `{ ${funcPa} }` : '';
   dataPa = dataPa ? `{ ${dataPa} }` : '';
-  const comment = geneComment({ commentName, funcParams });
-  if (type === 0) {
+  const comment = geneComment({commentName, funcParams});
+  if (type === apiRequestType.POST) {
     tpl = `
   ${comment}
   static ${funcName}(${funcPa}) {
@@ -72,7 +94,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
       data: ${dataPa || '{}'},
     })
   }`;
-  } else if (type === 1) {
+  } else if (type === apiRequestType.GET) {
     tpl = `
   ${comment}  
   static ${funcName}(${funcPa}) {
@@ -85,7 +107,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   return tpl;
 }
 
-function normalGeneXhr({ type, uri, params, apiName }) {
+function normalGeneXhr({type, uri, params, apiName}) {
   const name = uri.substr(uri.lastIndexOf('/') + 1);
   return baseGeneXhr({
     type,
@@ -97,7 +119,7 @@ function normalGeneXhr({ type, uri, params, apiName }) {
   });
 }
 
-function restGeneXhr({ type, uri, params, apiName }) {
+function restGeneXhr({type, uri, params, apiName}) {
   const nameArray = apiName.split('-');
   if (nameArray.length <= 1) {
     throw new Error(`${apiName} 没有函数名称，需要以 '-' 分割 `);
@@ -114,7 +136,7 @@ function restGeneXhr({ type, uri, params, apiName }) {
     urlPathKeys[item.name] = `$\{${item.name}\}`;
   });
   // 请求路径
-  const url = toPath(urlPathKeys, { encode: (value, token) => value });
+  const url = toPath(urlPathKeys, {encode: (value, token) => value});
   const pathParamKeysList = pathParamKeys.map(item => item.name);
   const paramList = params.filter(item => {
     return !pathParamKeysList.includes(item.paramKey);
@@ -130,14 +152,21 @@ function restGeneXhr({ type, uri, params, apiName }) {
 }
 
 /**
- *
- * @param type - api类型 rest,normal
  * @param entry - 文件路径
  * @param output - 生成的文件名
  * @param {Function} geneXhr - 生成函数
  * @param overwrite - 是否覆盖生成的文件
  */
-function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
+function geneApi(
+  {
+    entry,
+    geneXhr,
+    output,
+    outputPath,
+    overwrite = defaultConfig.overwrite,
+    className,
+    importHead = defaultConfig.importHead,
+  }) {
   const name = entry;
   const outputFile = output || path.parse(name).name;
   const exist = fs.existsSync(`./${outputFile}.js`);
@@ -149,8 +178,8 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     const apiList = JSON.parse(data.toString());
     let strs = '';
     apiList.filter(apiFilter).forEach((item) => {
-      const { baseInfo, requestInfo, restfulParam, urlParam } = item;
-      const { apiName, apiURI, apiRequestType } = baseInfo;
+      const {baseInfo, requestInfo, restfulParam, urlParam} = item;
+      const {apiName, apiURI, apiRequestType} = baseInfo;
       const str = geneXhr({
         apiName,
         type: apiRequestType,
@@ -161,7 +190,7 @@ function geneApi({ entry, geneXhr, output, outputPath, overwrite, className }) {
     });
 
     fs.writeFileSync(`${outputPath}/${outputFile}.js`, `
-import xhr from '../xhr/microXhr';
+${importHead}
 
 export default class ${className}{
   ${strs}
@@ -170,6 +199,7 @@ export default class ${className}{
 }
 
 module.exports = function (config) {
-  config.geneXhr = config.type === 'rest' ? restGeneXhr : normalGeneXhr;
+  Object.assign(defaultConfig, config);
+  config.geneXhr = config.apiType === API_TYPE.rest ? restGeneXhr : normalGeneXhr;
   return geneApi(config);
 };
