@@ -39,7 +39,6 @@ const apiStatus = {
   7: 'BUG',
 };
 
-
 const API_TYPE = {
   noraml: 'noraml',
   rest: 'rest',
@@ -49,8 +48,8 @@ const defaultConfig = {
   apiType: 'rest',
   overwrite: true,
   importHead: `import xhr from '../xhr/microXhr';`,
+  outputExtname: `.js`,
 };
-
 
 function apiFilter(api) {
   return [0, 6].includes(api.baseInfo.apiStatus);
@@ -61,7 +60,7 @@ function geneParam(params) {
   return params.map(item => item.paramKey).join(', ');
 }
 
-function geneComment({commentName, funcParams}) {
+function geneComment({ commentName, funcParams }) {
   let str = '';
   funcParams.forEach((item, i) => {
     str += `   * @param { ${paramsType[+item.paramType]} } ${item.paramKey} - ${item.paramName}${i !== funcParams.length - 1 ? '\n' : ''}`;
@@ -77,13 +76,13 @@ function geneComment({commentName, funcParams}) {
   return tpl;
 }
 
-function baseGeneXhr({type, url, funcParams, params, funcName, commentName}) {
+function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   let tpl = '';
   let funcPa = geneParam(funcParams);
   let dataPa = geneParam(params);
   funcPa = funcPa ? `{ ${funcPa} }` : '';
   dataPa = dataPa ? `{ ${dataPa} }` : '';
-  const comment = geneComment({commentName, funcParams});
+  const comment = geneComment({ commentName, funcParams });
   if (type === apiRequestType.POST) {
     tpl = `
   ${comment}
@@ -107,7 +106,7 @@ function baseGeneXhr({type, url, funcParams, params, funcName, commentName}) {
   return tpl;
 }
 
-function normalGeneXhr({type, uri, params, apiName}) {
+function normalGeneXhr({ type, uri, params, apiName }) {
   const name = uri.substr(uri.lastIndexOf('/') + 1);
   return baseGeneXhr({
     type,
@@ -119,7 +118,7 @@ function normalGeneXhr({type, uri, params, apiName}) {
   });
 }
 
-function restGeneXhr({type, uri, params, apiName}) {
+function restGeneXhr({ type, uri, params, apiName }) {
   const nameArray = apiName.split('-');
   if (nameArray.length <= 1) {
     throw new Error(`${apiName} 没有函数名称，需要以 '-' 分割 `);
@@ -136,7 +135,7 @@ function restGeneXhr({type, uri, params, apiName}) {
     urlPathKeys[item.name] = `$\{${item.name}\}`;
   });
   // 请求路径
-  const url = toPath(urlPathKeys, {encode: (value, token) => value});
+  const url = toPath(urlPathKeys, { encode: (value, token) => value });
   const pathParamKeysList = pathParamKeys.map(item => item.name);
   const paramList = params.filter(item => {
     return !pathParamKeysList.includes(item.paramKey);
@@ -161,14 +160,14 @@ function geneApi(
   {
     entry,
     geneXhr,
-    output,
+    outputFileName,
     outputPath,
     overwrite = defaultConfig.overwrite,
     className,
     importHead = defaultConfig.importHead,
+    outputExtname = defaultConfig.outputExtname,
   }) {
-  const name = entry;
-  const outputFile = output || path.parse(name).name;
+  const outputFile = outputFileName || path.parse(entry).name;
   const exist = fs.existsSync(`./${outputFile}.js`);
   if (!overwrite) {
     if (exist) throw new Error(`${outputFile}.js 已存在`);
@@ -178,8 +177,8 @@ function geneApi(
     const apiList = JSON.parse(data.toString());
     let strs = '';
     apiList.filter(apiFilter).forEach((item) => {
-      const {baseInfo, requestInfo, restfulParam, urlParam} = item;
-      const {apiName, apiURI, apiRequestType} = baseInfo;
+      const { baseInfo, requestInfo, restfulParam, urlParam } = item;
+      const { apiName, apiURI, apiRequestType } = baseInfo;
       const str = geneXhr({
         apiName,
         type: apiRequestType,
@@ -189,7 +188,7 @@ function geneApi(
       strs += str;
     });
 
-    fs.writeFileSync(`${outputPath}/${outputFile}.js`, `
+    fs.writeFileSync(`${outputPath}/${outputFile}.${outputExtname}`, `
 ${importHead}
 
 export default class ${className}{

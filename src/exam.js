@@ -5,6 +5,7 @@ gene({
   entry: path.resolve(__dirname, './exam.json'),
   className: 'ExamSrv',
   outputPath: path.resolve(__dirname, '../dist'),
-  output: 'ExamSrv',
+  outputFileName: 'ExamSrv',
+  outputExtname: 'ts',
   overwrite: true,
 });
