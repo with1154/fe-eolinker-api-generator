@@ -1,1 +1,1885 @@
-[{"baseInfo":{"apiName":"\u83b7\u53d6\u5355\u4e2a\u9898\u76ee\u8be6\u60c5-questInfo","apiURI":"\/question\/info","apiProtocol":0,"apiSuccessMock":"{\n  \"code\": 200,\n  \"msg\": \"success\",\n  \"result\": {\n    \"info\": {\n      \"videoSrc\": \"http:\/\/videosrc\"\n    },\n    \"statistic\": {\n      \"answerCount\": 18194,\n      \"userAnswerCount\": 13214,\n      \"wrongCount\": 1129\n    },\n    \"userStatistic\": {\n      \"answerCount\": 18194,\n      \"wrongCount\": 1129\n    }\n  }\n}","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"&lt;p&gt;\u5355\u4e2a\u9898\u76ee\u7edf\u8ba1\u3001\u89c6\u9891\u7b49\u4fe1\u606f&lt;\/p&gt;&lt;p&gt;&lt;br&gt;&lt;\/p&gt;","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-10 16:43:31"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u9898\u76ee\u7f16\u53f7","paramKey":"questionId","paramValue":"336124","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"resultInfo":[],"urlParam":[],"restfulParam":[],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u7ae0\u5217\u8868-chapterList","apiURI":"\/subjects\/:subjectID\/chapters","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-10 16:54:26"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u8282\u5217\u8868-sectionList","apiURI":"\/chapters\/:chapterID\/sections","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-11 10:12:58"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u7ae0\u7f16\u53f7","paramKey":"chapterID","paramValue":"8384","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u7ae0\u4e0b\u9898\u76ee\u5217\u8868-chapterQuestions","apiURI":"\/chapters\/:chapterID\/questions","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-31 11:17:09"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u57fa\u7840\u9898\u578b(-1\u4e0d\u9650)","paramKey":"questionTypeID","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"3","paramName":"\u83b7\u53d6\u9898\u76ee\u7c7b\u578b\uff08-1\u4e0d\u9650 1 \u672a\u505a\u9898 2 \u5df2\u505a\u9898 3\u9519\u9898 4\u6536\u85cf\u9898\uff09","paramKey":"mode","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1}],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"chapterID","paramValue":"8384","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u8282\u4e0b\u9898\u76ee\u5217\u8868-sectionQuestions","apiURI":"\/sections\/:sectionID\/questions","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-31 11:16:39"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u57fa\u7840\u9898\u578b(-1\u4e0d\u9650)","paramKey":"questionTypeID","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"3","paramName":"\u83b7\u53d6\u9898\u76ee\u7c7b\u578b\uff08-1\u4e0d\u9650 1 \u672a\u505a\u9898 2 \u5df2\u505a\u9898 3\u9519\u9898 4\u6536\u85cf\u9898\uff09","paramKey":"mode","paramValue":"2","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1}],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u8282\u7f16\u53f7","paramKey":"sectionID","paramValue":"8396","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u7b54\u9898\u8bb0\u5f55-questionRecord","apiURI":"\/question\/record","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":0,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-16 16:21:51"},"headerInfo":[{"headerName":"Content-Type","headerValue":"application\/json"}],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"questionID","paramValue":"12345","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1},{"paramNotNull":"0","paramType":"0","paramName":"","paramKey":"answer","paramValue":"123, 123, 12","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":2},{"paramNotNull":"0","paramType":"8","paramName":"","paramKey":"correct","paramValue":"false","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":3}],"resultInfo":[],"urlParam":[],"restfulParam":[],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u6536\u85cf\u9898\u76ee-collectQuestion","apiURI":"\/question\/favorites","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":0,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-11 10:14:36"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u9898\u76ee\u7f16\u53f7","paramKey":"id","paramValue":"123","paramLimit":"","paramValueList":[],"default":0,"$index":0}],"resultInfo":[],"urlParam":[],"restfulParam":[],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u53d6\u6d88\u6536\u85cf-cancleCollectQuestion","apiURI":"\/question\/unFavorites","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":0,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-11 10:15:05"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u9898\u76ee\u7f16\u53f7","paramKey":"id","paramValue":"123","paramLimit":"","paramValueList":[],"default":0,"$index":0}],"resultInfo":[],"urlParam":[],"restfulParam":[],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u6a21\u62df\u8bd5\u5377\u5217\u8868-mockExamList","apiURI":"\/subjects\/:subjectID\/examMocks","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-23 16:13:42"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[{"paramNotNull":"0","paramName":"\u8bd5\u5377\u7c7b\u578b(-1 \u4e0d\u9650 1 \u6a21\u62df\u5377 2 \u771f\u9898\u5377)","paramKey":"examType","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramName":"\u662f\u5426\u5df2\u505a(-1 \u4e0d\u9650 0 \u672a\u505a 1 \u5df2\u505a)","paramKey":"hasDone","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1}],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u79d1\u76eeid","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u4e00\u4e2a\u6a21\u62df\u8bd5\u5377\u7684\u8be6\u60c5-mockExamInfo","apiURI":"\/examMock\/:id\/info","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-20 11:04:05"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u6a21\u62df\u8bd5\u5377id","paramKey":"id","paramValue":"115545","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u6dfb\u52a0\u6a21\u62df\u8bd5\u5377\u7b54\u9898\u8bb0\u5f55-addExamMockRecord","apiURI":"\/examMock\/:id\/record","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":0,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-19 17:56:28"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"13","paramName":"","paramKey":"examInfo","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"examInfo>>examId","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":1},{"paramNotNull":"0","paramType":"13","paramName":"","paramKey":"examInfo>>settings","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":2},{"paramNotNull":"0","paramType":"0","paramName":"","paramKey":"examInfo>>settings>>endDate","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":3},{"paramNotNull":"0","paramType":"0","paramName":"","paramKey":"examInfo>>settings>>startDate","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":4},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"examInfo>>settings>>timer","paramValue":"5400","paramLimit":"","paramValueList":[{"value":"5400","valueDescription":""}],"default":0,"$index":5},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"examInfo>>examID","paramValue":"88159","paramLimit":"","paramValueList":[{"value":"88159","valueDescription":""}],"default":0,"$index":6},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"examInfo>>subjectID","paramValue":"5451","paramLimit":"","paramValueList":[{"value":"5451","valueDescription":""}],"default":0,"$index":7},{"paramNotNull":"0","paramType":"0","paramName":"","paramKey":"examInfo>>name","paramValue":"2016\u5e74\u521d\u7ea7\u4f1a\u8ba1\u804c\u79f0\u300a\u7ecf\u6d4e\u6cd5\u57fa\u7840\u300b\u65e0\u7eb8\u5316\u8003\u8bd5\u6a21\u62df\u8bd5\u5377 (2)","paramLimit":"","paramValueList":[{"value":"2016\u5e74\u521d\u7ea7\u4f1a\u8ba1\u804c\u79f0\u300a\u7ecf\u6d4e\u6cd5\u57fa\u7840\u300b\u65e0\u7eb8\u5316\u8003\u8bd5\u6a21\u62df\u8bd5\u5377 (2)","valueDescription":""}],"default":0,"$index":8},{"paramNotNull":"0","paramType":"0","paramName":"","paramKey":"examInfo>>hash","paramValue":"cfa076ba68646c713eecc1a2e808fa2b","paramLimit":"","paramValueList":[],"default":0,"$index":9},{"paramNotNull":"0","paramType":"12","paramName":"","paramKey":"part","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":10},{"paramNotNull":"0","paramType":"13","paramName":"","paramKey":"part>>partInfo","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":11},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>partInfo>>id","paramValue":"328715","paramLimit":"","paramValueList":[{"value":"328715","valueDescription":""}],"default":0,"$index":12},{"paramNotNull":"0","paramType":"0","paramName":"","paramKey":"part>>partInfo>>name","paramValue":"\u5355\u9879\u9009\u62e9\u9898","paramLimit":"","paramValueList":[{"value":"\u5355\u9879\u9009\u62e9\u9898","valueDescription":""}],"default":0,"$index":13},{"paramNotNull":"0","paramType":"12","paramName":"","paramKey":"part>>question","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":14},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>id","paramValue":"282934","paramLimit":"","paramValueList":[{"value":"282934","valueDescription":""}],"default":0,"$index":15},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>partId","paramValue":"328715","paramLimit":"","paramValueList":[{"value":"328715","valueDescription":""}],"default":0,"$index":16},{"paramNotNull":"0","paramType":"12","paramName":"","paramKey":"part>>question>>answers","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":17},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>answers>>id","paramValue":"525710","paramLimit":"","paramValueList":[{"value":"525710","valueDescription":""}],"default":0,"$index":18},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>answers>>checked","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":19},{"paramNotNull":"0","paramType":"0","paramName":"","paramKey":"part>>question>>subQuests","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":20},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>isCorrect","paramValue":"1","paramLimit":"","paramValueList":[{"value":"1","valueDescription":""}],"default":0,"$index":21},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>questTypeID","paramValue":"1","paramLimit":"","paramValueList":[{"value":"1","valueDescription":""}],"default":0,"$index":22},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>isDone","paramValue":"1","paramLimit":"","paramValueList":[{"value":"1","valueDescription":""}],"default":0,"$index":23},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>question>>isShowAnswer","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":24},{"paramNotNull":"0","paramType":"13","paramName":"","paramKey":"part>>state","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":25},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>state>>totalScore","paramValue":"33","paramLimit":"","paramValueList":[{"value":"33","valueDescription":""}],"default":0,"$index":26},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>state>>score","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":27},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>state>>yesNum","paramValue":"5","paramLimit":"","paramValueList":[{"value":"5","valueDescription":""}],"default":0,"$index":28},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"part>>state>>doneNum","paramValue":"16","paramLimit":"","paramValueList":[{"value":"16","valueDescription":""}],"default":0,"$index":29},{"paramNotNull":"0","paramType":"13","paramName":"","paramKey":"state","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":30},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"state>>curIdx","paramValue":"22","paramLimit":"","paramValueList":[{"value":"22","valueDescription":""}],"default":0,"$index":31},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"state>>time","paramValue":"3530","paramLimit":"","paramValueList":[{"value":"3530","valueDescription":""}],"default":0,"$index":32},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"state>>isEnd","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":33},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"state>>isSubmit","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":34},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"state>>isShowAnswer","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":35},{"paramNotNull":"0","paramType":"13","paramName":"","paramKey":"result","paramValue":"","paramLimit":"","paramValueList":[],"default":0,"$index":36},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"result>>totalScore","paramValue":"100","paramLimit":"","paramValueList":[{"value":"100","valueDescription":""}],"default":0,"$index":37},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"result>>doneNum","paramValue":"17","paramLimit":"","paramValueList":[{"value":"17","valueDescription":""}],"default":0,"$index":38},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"result>>yesNum","paramValue":"5","paramLimit":"","paramValueList":[{"value":"5","valueDescription":""}],"default":0,"$index":39},{"paramNotNull":"0","paramType":"14","paramName":"","paramKey":"result>>score","paramValue":"0","paramLimit":"","paramValueList":[{"value":"0","valueDescription":""}],"default":0,"$index":40}],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u6a21\u62df\u8bd5\u5377\u7f16\u53f7","paramKey":"id","paramValue":"88159","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u6a21\u62df\u8bd5\u5377\u7b54\u9898\u8bb0\u5f55\u5217\u8868-getExamMockRecords","apiURI":"\/examMock\/:id\/records","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-19 11:38:30"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u6a21\u62df\u8bd5\u5377\u7f16\u53f7","paramKey":"id","paramValue":"88159","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u6a21\u62df\u8bd5\u5377\u7b54\u9898\u8bb0\u5f55-getExamMockRecord","apiURI":"\/examMock\/:id\/record\/:recordID","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-19 11:41:43"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u6a21\u62df\u8bd5\u5377\u7f16\u53f7","paramKey":"id","paramValue":"88159","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"3","paramName":"\u7b54\u9898\u8bb0\u5f55\u7f16\u53f7","paramKey":"recordID","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u4f5c\u4e1a\u8be6\u60c5-getHomeworkInfo","apiURI":"\/homework\/:id\/info","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-17 16:36:21"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u4f5c\u4e1a\u7f16\u53f7","paramKey":"id","paramValue":"117130","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u6dfb\u52a0\u4f5c\u4e1a\u7b54\u9898\u8bb0\u5f55-addHomeworkRecord","apiURI":"\/homework\/:id\/record","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":0,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-17 16:36:48"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u4f5c\u4e1a\u7f16\u53f7","paramKey":"id","paramValue":"","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u4f5c\u4e1a\u7b54\u9898\u8bb0\u5f55\u5217\u8868-getHomeworkRecords","apiURI":"\/homework\/:id\/records","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-17 16:37:12"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u4f5c\u4e1a\u7f16\u53f7","paramKey":"id","paramValue":"","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u4f5c\u4e1a\u7b54\u9898\u8bb0\u5f55-getHomeworkRecord","apiURI":"\/homework\/:id\/record\/:recordID","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-17 16:37:30"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u4f5c\u4e1a\u7f16\u53f7","paramKey":"id","paramValue":"","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"3","paramName":"\u7b54\u5377\u8bb0\u5f55\u7f16\u53f7","paramKey":"recordID","paramValue":"","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u77e5\u8bc6\u70b9\u5217\u8868\u548c\u8fdb\u5ea6","apiURI":"\/\/","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":0,"apiStatus":3,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-23 10:39:28"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u77e5\u8bc6\u70b9\u9898\u76ee-knowledgeQuestions","apiURI":"\/knowledge\/:knowledgeID\/question","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":6,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-31 16:48:37"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u57fa\u7840\u9898\u578b(-1\u4e0d\u9650)","paramKey":"questionTypeID","paramValue":"-1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"3","paramName":"\u83b7\u53d6\u9898\u76ee\u7c7b\u578b\uff08-1\u4e0d\u9650 1 \u672a\u505a\u9898 2 \u5df2\u505a\u9898 3\u9519\u9898 4\u6536\u85cf\u9898)","paramKey":"mode","paramValue":"-1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1}],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u77e5\u8bc6\u70b9id","paramKey":"knowledgeID","paramValue":"14","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u9519\u9898\u7ae0\u5217\u8868-getErrorChapterList","apiURI":"\/subjects\/:subjectID\/chapters\/errors","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-31 16:27:23"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u79d1\u76eeID","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u9519\u9898\u6b21\u6570\u6392\u5217\u3001\u65f6\u95f4\u6392\u5217\u3002","apiURI":"\/subjects\/:subjectID\/type\/:type\/errors","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":5,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-31 16:05:13"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"1 \u65f6\u95f4\u987a\u5e8f 2 \u6b21\u6570\u987a\u5e8f","paramKey":"type","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0},{"paramNotNull":"0","paramType":"3","paramName":"\u79d1\u76ee ID","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":1}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u6e05\u7a7a\u9519\u9898\uff08\u5f85\u5b9a\uff09","apiURI":"\/","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":0,"apiStatus":3,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-23 15:13:38"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u6309\u6536\u85cf\u65f6\u95f4\u6392\u5217","apiURI":"\/subjects\/:subjectID\/collections","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":3,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-25 10:58:51"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u79d1\u76eeID","paramKey":"subjectID","paramValue":"","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u6536\u85cf\u9898\u7ae0\u5217\u8868-getCollectChapterList","apiURI":"\/subjects\/:subjectID\/chapters\/collections","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-25 10:59:04"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u79d1\u76eeID","paramKey":"subjectID","paramValue":"","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u7528\u6237\u662f\u5426\u6536\u85cf-checkUserCollectedQuestion","apiURI":"\/question\/collected\/:id","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-23 14:46:58"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u9898\u76ee\u7f16\u53f7","paramKey":"id","paramValue":"123","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u79d1\u76ee\u4fe1\u606f-getSubjectInfo","apiURI":"\/subjects\/:subjectID\/info","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-26 15:38:18"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u7ae0\u4fe1\u606f-getChapterInfo","apiURI":"\/chapters\/:chapterID\/info","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-27 11:30:02"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"chapterID","paramValue":"8384","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u8282\u4fe1\u606f-getSectionInfo","apiURI":"\/sections\/:sectionID\/info","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-27 11:30:46"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"sectionID","paramValue":"8395","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u73ed\u7ea7\u4f5c\u4e1a\u5217\u8868-getHomeWorkList","apiURI":"\/subjects\/:subjectID\/homeWorks","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":6,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-31 19:40:12"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u662f\u5426\u5df2\u505a","paramKey":"hasDone","paramValue":"","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u8003\u8bd5\u7c7b\u578b\u4e0b\u7684\u79d1\u76ee-getSubjects","apiURI":"\/subjects\/:subjectID\/subjects","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":0,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-30 16:36:55"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u8003\u8bd5\u7c7b\u578b\u7f16\u53f7","paramKey":"subjectID","paramValue":"5617","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u79d1\u76ee\u7ec3\u4e60\u7edf\u8ba1\u6570\u636e-getSubjectStatistic","apiURI":"\/subjects\/:subjectID\/statistic","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":5,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-30 17:27:52"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u7ae0\u4e0b\u5404\u79cd\u9898\u76ee\u7c7b\u578b\u9898\u76ee\u6570","apiURI":"\/chapters\/:chapterID\/questionNum","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":5,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-31 14:00:09"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"chapterID","paramValue":"8384","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u8282\u4e0b\u5404\u79cd\u9898\u76ee\u7c7b\u578b\u9898\u76ee\u6570","apiURI":"\/sections\/:sectionID\/questionNum","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":5,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-31 14:00:22"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"sectionID","paramValue":"8395","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u4e00\u4e2a\u9898\u76ee\u7684\u7b54\u9898\u7ed3\u679c","apiURI":"\/question\/record\/:questionID","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":5,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-31 11:47:17"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"0","paramName":"\u9898\u76eeid","paramKey":"questionID","paramValue":"260503","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u4e00\u4e2a\u79d1\u76ee\u7684\u77e5\u8bc6\u70b9\u5217\u8868-getSubjectKnowledgeList","apiURI":"\/subjects\/:subjectID\/knowledgeList","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":6,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-31 16:50:07"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[{"paramNotNull":"0","paramType":"3","paramName":"\u5206\u9875\u53c2\u6570","paramKey":"paget","paramValue":"1","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u79d1\u76eeid","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u4e00\u4e2a\u77e5\u8bc6\u70b9\u7684\u8be6\u60c5-getKnowledgeInfo","apiURI":"\/knowledge\/:id\/info","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":6,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":"","afterInject":"","apiUpdateTime":"2018-07-31 16:27:46"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"\u77e5\u8bc6\u70b9id","paramKey":"id","paramValue":"14","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"type":"object","rule":""}},"testCastList":[]},{"baseInfo":{"apiName":"\u83b7\u53d6\u79d1\u76ee\u7684\u540c\u7ea7\u79d1\u76ee\u5217\u8868","apiURI":"\/subjects\/:subjectID\/subjectPartner","apiProtocol":0,"apiSuccessMock":"","apiFailureMock":"","apiRequestType":1,"apiStatus":5,"starred":0,"apiNoteType":0,"apiNoteRaw":"","apiNote":"","apiRequestParamType":0,"apiRequestRaw":"","apiFailureStatusCode":"200","apiSuccessStatusCode":"200","beforeInject":null,"afterInject":null,"apiUpdateTime":"2018-07-31 17:36:14"},"headerInfo":[],"authInfo":{"status":"0"},"requestInfo":[],"resultInfo":[],"urlParam":[],"restfulParam":[{"paramNotNull":"0","paramType":"3","paramName":"","paramKey":"subjectID","paramValue":"5618","paramLimit":"","paramNote":"","paramValueList":[],"default":0,"$index":0}],"mockInfo":{"rule":[{"paramKey":"","paramType":"0","$index":0}],"result":"{}","mockConfig":{"rule":"","type":"object"}},"testCastList":[]}]
+[
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u5355\u4e2a\u9898\u76ee\u8be6\u60c5-questInfo",
+      "apiURI": "\/question\/info",
+      "apiProtocol": 0,
+      "apiSuccessMock": "{\n  \"code\": 200,\n  \"msg\": \"success\",\n  \"result\": {\n    \"info\": {\n      \"videoSrc\": \"http:\/\/videosrc\"\n    },\n    \"statistic\": {\n      \"answerCount\": 18194,\n      \"userAnswerCount\": 13214,\n      \"wrongCount\": 1129\n    },\n    \"userStatistic\": {\n      \"answerCount\": 18194,\n      \"wrongCount\": 1129\n    }\n  }\n}",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "&lt;p&gt;\u5355\u4e2a\u9898\u76ee\u7edf\u8ba1\u3001\u89c6\u9891\u7b49\u4fe1\u606f&lt;\/p&gt;&lt;p&gt;&lt;br&gt;&lt;\/p&gt;",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-10 16:43:31"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u9898\u76ee\u7f16\u53f7",
+        "paramKey": "questionId",
+        "paramValue": "336124",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u7ae0\u5217\u8868-chapterList",
+      "apiURI": "\/subjects\/:subjectID\/chapters",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-10 16:54:26"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u8282\u5217\u8868-sectionList",
+      "apiURI": "\/chapters\/:chapterID\/sections",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-11 10:12:58"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u7ae0\u7f16\u53f7",
+        "paramKey": "chapterID",
+        "paramValue": "8384",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u7ae0\u4e0b\u9898\u76ee\u5217\u8868-chapterQuestions",
+      "apiURI": "\/chapters\/:chapterID\/questions",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-31 11:17:09"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u57fa\u7840\u9898\u578b(-1\u4e0d\u9650)",
+        "paramKey": "questionTypeID",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u83b7\u53d6\u9898\u76ee\u7c7b\u578b\uff08-1\u4e0d\u9650 1 \u672a\u505a\u9898 2 \u5df2\u505a\u9898 3\u9519\u9898 4\u6536\u85cf\u9898\uff09",
+        "paramKey": "mode",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      }
+    ],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "chapterID",
+        "paramValue": "8384",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u8282\u4e0b\u9898\u76ee\u5217\u8868-sectionQuestions",
+      "apiURI": "\/sections\/:sectionID\/questions",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-07-31 11:16:39"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u57fa\u7840\u9898\u578b(-1\u4e0d\u9650)",
+        "paramKey": "questionTypeID",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u83b7\u53d6\u9898\u76ee\u7c7b\u578b\uff08-1\u4e0d\u9650 1 \u672a\u505a\u9898 2 \u5df2\u505a\u9898 3\u9519\u9898 4\u6536\u85cf\u9898\uff09",
+        "paramKey": "mode",
+        "paramValue": "2",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      }
+    ],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u8282\u7f16\u53f7",
+        "paramKey": "sectionID",
+        "paramValue": "8396",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u7b54\u9898\u8bb0\u5f55-questionRecord",
+      "apiURI": "\/question\/record",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-16 16:21:51"
+    },
+    "headerInfo": [
+      {
+        "headerName": "Content-Type",
+        "headerValue": "application\/json"
+      }
+    ],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "questionID",
+        "paramValue": "12345",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "",
+        "paramKey": "answer",
+        "paramValue": "123, 123, 12",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 2
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "8",
+        "paramName": "",
+        "paramKey": "correct",
+        "paramValue": "false",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 3
+      }
+    ],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u6536\u85cf\u9898\u76ee-collectQuestion",
+      "apiURI": "\/question\/favorites",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 1,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-09 13:50:57"
+    },
+    "headerInfo": [
+      {
+        "headerName": "Content-Type",
+        "headerValue": "application\/json"
+      }
+    ],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u53d6\u6d88\u6536\u85cf-cancleCollectQuestion",
+      "apiURI": "\/question\/unFavorites",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 1,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-08-09 13:53:16"
+    },
+    "headerInfo": [
+      {
+        "headerName": "Content-Type",
+        "headerValue": "application\/json"
+      }
+    ],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u77e5\u8bc6\u70b9\u5217\u8868\u548c\u8fdb\u5ea6",
+      "apiURI": "\/\/",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 3,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-23 10:39:28"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u77e5\u8bc6\u70b9\u9898\u76ee-knowledgeQuestions",
+      "apiURI": "\/knowledge\/:knowledgeID\/question",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-07-31 16:48:37"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u57fa\u7840\u9898\u578b(-1\u4e0d\u9650)",
+        "paramKey": "questionTypeID",
+        "paramValue": "-1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u83b7\u53d6\u9898\u76ee\u7c7b\u578b\uff08-1\u4e0d\u9650 1 \u672a\u505a\u9898 2 \u5df2\u505a\u9898 3\u9519\u9898 4\u6536\u85cf\u9898)",
+        "paramKey": "mode",
+        "paramValue": "-1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      }
+    ],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u77e5\u8bc6\u70b9id",
+        "paramKey": "knowledgeID",
+        "paramValue": "14",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u9519\u9898\u7ae0\u5217\u8868-getErrorChapterList",
+      "apiURI": "\/subjects\/:subjectID\/chapters\/errors",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-31 16:27:23"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u79d1\u76eeID",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u9519\u9898\u6b21\u6570\u6392\u5217\u3001\u65f6\u95f4\u6392\u5217\u3002",
+      "apiURI": "\/subjects\/:subjectID\/type\/:type\/errors",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 5,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-08-07 17:42:54"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "1 \u65f6\u95f4\u987a\u5e8f 2 \u6b21\u6570\u987a\u5e8f",
+        "paramKey": "type",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u79d1\u76ee ID",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "Query param",
+        "paramKey": "page",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 2
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "Query param",
+        "paramKey": "pageSize",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 3
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u6e05\u7a7a\u9519\u9898\uff08\u5f85\u5b9a\uff09",
+      "apiURI": "\/",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 3,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-07-23 15:13:38"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u6309\u6536\u85cf\u65f6\u95f4\u6392\u5217",
+      "apiURI": "\/subjects\/:subjectID\/collections",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 3,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-07 17:42:38"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u79d1\u76eeID",
+        "paramKey": "subjectID",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "Query param",
+        "paramKey": "page",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "Query param",
+        "paramKey": "pageSize",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 2
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u6536\u85cf\u9898\u7ae0\u5217\u8868-getCollectChapterList",
+      "apiURI": "\/subjects\/:subjectID\/chapters\/collections",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-07-25 10:59:04"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u79d1\u76eeID",
+        "paramKey": "subjectID",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u7528\u6237\u662f\u5426\u6536\u85cf-checkUserCollectedQuestion",
+      "apiURI": "\/question\/collected\/:id",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-23 14:46:58"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u9898\u76ee\u7f16\u53f7",
+        "paramKey": "id",
+        "paramValue": "123",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u79d1\u76ee\u4fe1\u606f-getSubjectInfo",
+      "apiURI": "\/subjects\/:subjectID\/info",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-26 15:38:18"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u7ae0\u4fe1\u606f-getChapterInfo",
+      "apiURI": "\/chapters\/:chapterID\/info",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-07-27 11:30:02"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "chapterID",
+        "paramValue": "8384",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u8282\u4fe1\u606f-getSectionInfo",
+      "apiURI": "\/sections\/:sectionID\/info",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-07-27 11:30:46"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "sectionID",
+        "paramValue": "8395",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u8003\u8bd5\u7c7b\u578b\u4e0b\u7684\u79d1\u76ee-getSubjects",
+      "apiURI": "\/subjects\/:subjectID\/subjects",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-30 16:36:55"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u8003\u8bd5\u7c7b\u578b\u7f16\u53f7",
+        "paramKey": "subjectID",
+        "paramValue": "5617",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u79d1\u76ee\u7ec3\u4e60\u7edf\u8ba1\u6570\u636e-getSubjectStatistic",
+      "apiURI": "\/subjects\/:subjectID\/statistic",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-30 17:27:52"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u7ae0\u4e0b\u5404\u79cd\u9898\u76ee\u7c7b\u578b\u9898\u76ee\u6570-getChapterQuestNum",
+      "apiURI": "\/chapters\/:chapterID\/questionNum",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-01 14:03:48"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "chapterID",
+        "paramValue": "8384",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u8282\u4e0b\u5404\u79cd\u9898\u76ee\u7c7b\u578b\u9898\u76ee\u6570-getSectionQuestNum",
+      "apiURI": "\/sections\/:sectionID\/questionNum",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-08-01 14:04:06"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "sectionID",
+        "paramValue": "8395",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u4e00\u4e2a\u9898\u76ee\u7684\u7b54\u9898\u7ed3\u679c",
+      "apiURI": "\/question\/record\/:questionID",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 5,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-31 11:47:17"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "0",
+        "paramName": "\u9898\u76eeid",
+        "paramKey": "questionID",
+        "paramValue": "260503",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u4e00\u4e2a\u79d1\u76ee\u7684\u77e5\u8bc6\u70b9\u5217\u8868-getSubjectKnowledgeList",
+      "apiURI": "\/subjects\/:subjectID\/knowledgeList",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-01 17:20:05"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u5206\u9875\u53c2\u6570",
+        "paramKey": "page",
+        "paramValue": "1",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u79d1\u76eeid",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u4e00\u4e2a\u77e5\u8bc6\u70b9\u7684\u8be6\u60c5-getKnowledgeInfo",
+      "apiURI": "\/knowledge\/:id\/info",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 4,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": "",
+      "afterInject": "",
+      "apiUpdateTime": "2018-07-31 16:27:46"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u77e5\u8bc6\u70b9id",
+        "paramKey": "id",
+        "paramValue": "14",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "type": "object",
+        "rule": ""
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u83b7\u53d6\u79d1\u76ee\u7684\u540c\u7ea7\u79d1\u76ee\u5217\u8868",
+      "apiURI": "\/subjects\/:subjectID\/subjectPartner",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 1,
+      "apiStatus": 2,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-07-31 17:36:14"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "",
+        "paramKey": "subjectID",
+        "paramValue": "5618",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      }
+    ],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u6e05\u7a7a\u7ae0\u76f8\u5173\u8bb0\u5f55-cleanChapterRecord",
+      "apiURI": "\/question\/chapters\/clean",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 1,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-09 13:51:27"
+    },
+    "headerInfo": [
+      {
+        "headerName": "Content-Type",
+        "headerValue": "application\/json"
+      }
+    ],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u6e05\u7a7a\u8282\u76f8\u5173\u8bb0\u5f55-cleanSectionRecord",
+      "apiURI": "\/question\/sections\/clean",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 0,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-09 13:51:11"
+    },
+    "headerInfo": [
+      {
+        "headerName": "Content-Type",
+        "headerValue": "application\/json"
+      }
+    ],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "\u8282ID",
+        "paramKey": "sectionID",
+        "paramValue": "1234",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 0
+      },
+      {
+        "paramNotNull": "0",
+        "paramType": "3",
+        "paramName": "1 \u7ae0\u8282\u8bb0\u5f55 2 \u9519\u9898 3 \u6536\u85cf\u9898",
+        "paramKey": "type",
+        "paramValue": "",
+        "paramLimit": "",
+        "paramNote": "",
+        "paramValueList": [],
+        "default": 0,
+        "$index": 1
+      }
+    ],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  },
+  {
+    "baseInfo": {
+      "apiName": "\u5220\u9664\u5355\u4e2a\u9519\u9898\u7684\u505a\u9898\u8bb0\u5f55-removeErrorQuestRecord",
+      "apiURI": "\/question\/errors\/delete",
+      "apiProtocol": 0,
+      "apiSuccessMock": "",
+      "apiFailureMock": "",
+      "apiRequestType": 0,
+      "apiStatus": 0,
+      "starred": 0,
+      "apiNoteType": 0,
+      "apiNoteRaw": "",
+      "apiNote": "",
+      "apiRequestParamType": 1,
+      "apiRequestRaw": "",
+      "apiFailureStatusCode": "200",
+      "apiSuccessStatusCode": "200",
+      "beforeInject": null,
+      "afterInject": null,
+      "apiUpdateTime": "2018-08-09 13:43:51"
+    },
+    "headerInfo": [],
+    "authInfo": {
+      "status": "0"
+    },
+    "requestInfo": [],
+    "resultInfo": [],
+    "urlParam": [],
+    "restfulParam": [],
+    "mockInfo": {
+      "rule": [
+        {
+          "paramKey": "",
+          "paramType": "0",
+          "$index": 0
+        }
+      ],
+      "result": "{}",
+      "mockConfig": {
+        "rule": "",
+        "type": "object"
+      }
+    },
+    "testCastList": []
+  }
+]

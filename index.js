@@ -48,11 +48,17 @@ const defaultConfig = {
   apiType: 'rest',
   overwrite: true,
   importHead: `import xhr from '../xhr/microXhr';`,
-  outputExtname: `.js`,
+  outputExtname: `js`,
 };
 
 function apiFilter(api) {
   return [0, 6].includes(api.baseInfo.apiStatus);
+}
+
+function isPostJson(headerInfo) {
+  return headerInfo.some(head => {
+    return head.headerName === 'Content-Type' && head.headerValue === 'application/json';
+  });
 }
 
 function geneParam(params) {
@@ -76,7 +82,7 @@ function geneComment({ commentName, funcParams }) {
   return tpl;
 }
 
-function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
+function baseGeneXhr({ type, url, funcParams, params, funcName, commentName, isPostJson }) {
   let tpl = '';
   let funcPa = geneParam(funcParams);
   let dataPa = geneParam(params);
@@ -89,7 +95,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   static ${funcName}(${funcPa}) {
     return xhr({
       method: 'post',
-      url: \`${url}\`,
+      url: \`${url}\`,${isPostJson ? '' : '\n      json: false,'}
       data: ${dataPa || '{}'},
     })
   }`;
@@ -106,7 +112,7 @@ function baseGeneXhr({ type, url, funcParams, params, funcName, commentName }) {
   return tpl;
 }
 
-function normalGeneXhr({ type, uri, params, apiName }) {
+function normalGeneXhr({ type, uri, params, apiName, isPostJson }) {
   const name = uri.substr(uri.lastIndexOf('/') + 1);
   return baseGeneXhr({
     type,
@@ -115,10 +121,11 @@ function normalGeneXhr({ type, uri, params, apiName }) {
     params,
     commentName: apiName,
     funcName: name,
+    isPostJson,
   });
 }
 
-function restGeneXhr({ type, uri, params, apiName }) {
+function restGeneXhr({ type, uri, params, apiName, isPostJson }) {
   const nameArray = apiName.split('-');
   if (nameArray.length <= 1) {
     throw new Error(`${apiName} 没有函数名称，需要以 '-' 分割 `);
@@ -147,6 +154,7 @@ function restGeneXhr({ type, uri, params, apiName }) {
     params: paramList,
     commentName,
     funcName,
+    isPostJson,
   });
 }
 
@@ -177,12 +185,13 @@ function geneApi(
     const apiList = JSON.parse(data.toString());
     let strs = '';
     apiList.filter(apiFilter).forEach((item) => {
-      const { baseInfo, requestInfo, restfulParam, urlParam } = item;
+      const { baseInfo, headerInfo, requestInfo, restfulParam, urlParam } = item;
       const { apiName, apiURI, apiRequestType } = baseInfo;
       const str = geneXhr({
         apiName,
         type: apiRequestType,
         uri: apiURI,
+        isPostJson: isPostJson(headerInfo),
         params: [...requestInfo, ...restfulParam, ...urlParam].filter(item => !item.paramKey.includes('>>')),
       });
       strs += str;
