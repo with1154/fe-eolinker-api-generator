@@ -9,4 +9,5 @@ gene({
   outputFileName: 'aaa',
   outputExtname: 'ts',
   overwrite: true,
+  globalPostJson: false,
 });

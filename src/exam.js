@@ -2,7 +2,7 @@ const gene = require('../index');
 const path = require('path');
 gene({
   apiType: 'rest',
-  entry: path.resolve(__dirname, './exam.json'),
+  entry: path.resolve(__dirname, './test.json'),
   className: 'ExamSrv',
   outputPath: path.resolve(__dirname, '../dist'),
   outputFileName: 'ExamSrv',
