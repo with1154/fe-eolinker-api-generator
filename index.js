@@ -40,7 +40,7 @@ const apiStatus = {
 };
 
 const API_TYPE = {
-  noraml: 'noraml',
+  normal: 'normal',
   rest: 'rest',
 };
 
