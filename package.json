@@ -1,6 +1,6 @@
 {
   "name": "eolinker-api-generator",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "eolinker-api-generator",
   "main": "index.js",
   "directories": {
