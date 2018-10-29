@@ -1,5 +1,9 @@
 const gene = require('../index');
 const path = require('path');
+
+/**
+ * 请先确保将api的状态改为启用或者对接,其他状态的api不会生成
+ */
 gene({
   /**
    * 可选参数 rest normal, 当为 rest参数时，需要在api说明中使用 `-`分割函数名，
