@@ -1,6 +1,5 @@
 const gene = require('../index');
 const path = require('path');
-
 /**
  * 请先确保将api的状态改为启用或者对接,其他状态的api不会生成
  */
@@ -27,3 +26,4 @@ gene({
   // post 方法是否使用json,默认为 false,使用formData
   globalPostJson: false,
 });
+

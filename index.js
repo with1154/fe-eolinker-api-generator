@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const pathToRegexp = require('path-to-regexp');
+const mkdirp = require("mkdirp")
+
 const apiRequestType = {
   POST: 0,
   GET: 1,
@@ -82,21 +84,25 @@ function geneComment({commentName, funcParams}) {
   return tpl;
 }
 
-function baseGeneXhr({type, url, funcParams, params, funcName, commentName, isPostJson}) {
+function baseGeneXhr({
+                       type, url, funcParams, params, funcName, commentName, isPostJson, headers,
+                     }) {
   let tpl = '';
   let funcPa = geneParam(funcParams);
   let dataPa = geneParam(params);
   funcPa = funcPa ? `{ ${funcPa} }` : '';
   dataPa = dataPa ? `{ ${dataPa} }` : '';
+  const headerStr = Object.values(headers).length ? JSON.stringify(headers) : ''
   const comment = geneComment({commentName, funcParams});
   if (type === apiRequestType.POST) {
     tpl = `
   ${comment}
   static ${funcName}(${funcPa}) {
     return xhr({
-      method: 'post',
+      method: 'post',${headerStr ? `\n      headers:${headerStr},` : ''}
       url: \`${url}\`,${isPostJson ? '' : '\n      json: false,'}
       data: ${dataPa || '{}'},
+      custom: arguments[1]
     })
   }`;
   } else if (type === apiRequestType.GET) {
@@ -104,20 +110,22 @@ function baseGeneXhr({type, url, funcParams, params, funcName, commentName, isPo
   ${comment}  
   static ${funcName}(${funcPa}) {
     return xhr({
-      url: \`${url}\`,
+      url: \`${url}\`,${headerStr ? `\n      headers:${headerStr},` : ''}
       params: ${dataPa || '{}'},
+      custom: arguments[1]
     })
   }`;
   }
   return tpl;
 }
 
-function normalGeneXhr({type, uri, params, apiName, isPostJson}) {
+function normalGeneXhr({type, uri, params, apiName, isPostJson, headers}) {
   const name = uri.substr(uri.lastIndexOf('/') + 1);
   return baseGeneXhr({
     type,
     url: uri,
     funcParams: params,
+    headers,
     params,
     commentName: apiName,
     funcName: name,
@@ -125,7 +133,7 @@ function normalGeneXhr({type, uri, params, apiName, isPostJson}) {
   });
 }
 
-function restGeneXhr({type, uri, params, apiName, isPostJson}) {
+function restGeneXhr({type, uri, params, apiName, isPostJson, headers}) {
   const nameArray = apiName.split('-');
   if (nameArray.length <= 1) {
     throw new Error(`${apiName} 没有函数名称，需要以 '-' 分割 `);
@@ -155,8 +163,27 @@ function restGeneXhr({type, uri, params, apiName, isPostJson}) {
     commentName,
     funcName,
     isPostJson,
+    headers,
   });
 }
+
+/*
+eg:
+[ { headerName: 'Content-Type',
+  headerValue: 'multipart/form-data' } ]
+  ={
+  'Content-Type':'multipart/form-data'
+  }
+  */
+
+function headersToObject(headres) {
+  const obj = {}
+  headres.forEach((item) => {
+    obj[item.headerName] = item.headerValue
+  })
+  return obj
+}
+
 
 /**
  * @param entry - 文件路径
@@ -195,10 +222,14 @@ function geneApi(
         uri: apiURI,
         isPostJson: singlePostJsonFilter(headerInfo) || globalPostJson,
         params: [...requestInfo, ...restfulParam, ...urlParam].filter(item => !item.paramKey.includes('>>')),
+        headers: headersToObject(headerInfo),
       });
       strs += str;
     });
-
+    mkdirp.sync(outputPath, (err) => {
+      if (err) throw err;
+      console.log(123);
+    })
     fs.writeFileSync(`${outputPath}/${outputFile}.${outputExtname}`, `
 ${importHead}
 
