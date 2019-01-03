@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const pathToRegexp = require('path-to-regexp');
-const mkdirp = require("mkdirp")
+const mkdirp = require('mkdirp');
 
 const apiRequestType = {
   POST: 0,
@@ -92,7 +92,7 @@ function baseGeneXhr({
   let dataPa = geneParam(params);
   funcPa = funcPa ? `{ ${funcPa} }` : '';
   dataPa = dataPa ? `{ ${dataPa} }` : '';
-  const headerStr = Object.values(headers).length ? JSON.stringify(headers) : ''
+  const headerStr = Object.values(headers).length ? JSON.stringify(headers) : '';
   const comment = geneComment({commentName, funcParams});
   if (type === apiRequestType.POST) {
     tpl = `
@@ -177,11 +177,11 @@ eg:
   */
 
 function headersToObject(headres) {
-  const obj = {}
+  const obj = {};
   headres.forEach((item) => {
-    obj[item.headerName] = item.headerValue
-  })
-  return obj
+    obj[item.headerName] = item.headerValue;
+  });
+  return obj;
 }
 
 
@@ -221,7 +221,7 @@ function geneApi(
         type: apiRequestType,
         uri: apiURI,
         isPostJson: singlePostJsonFilter(headerInfo) || globalPostJson,
-        params: [...requestInfo, ...restfulParam, ...urlParam].filter(item => !item.paramKey.includes('>>')),
+        params: [...requestInfo, ...restfulParam || [], ...urlParam].filter(item => !item.paramKey.includes('>>')),
         headers: headersToObject(headerInfo),
       });
       strs += str;
@@ -229,7 +229,7 @@ function geneApi(
     mkdirp.sync(outputPath, (err) => {
       if (err) throw err;
       console.log(123);
-    })
+    });
     fs.writeFileSync(`${outputPath}/${outputFile}.${outputExtname}`, `
 ${importHead}
 
