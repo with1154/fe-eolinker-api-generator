@@ -3,3 +3,4 @@ dist
 test/test.json
 node_modules
 yarn-error.log
+package-lock.json
