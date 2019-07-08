@@ -94,6 +94,7 @@ function baseGeneXhr({
   dataPa = dataPa ? `{ ${dataPa} }` : '';
   const headerStr = Object.values(headers).length ? JSON.stringify(headers) : '';
   const comment = geneComment({commentName, funcParams});
+  type = Number(type)
   if (type === apiRequestType.POST) {
     tpl = `
   ${comment}
