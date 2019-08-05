@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ltinyho/eolinker-api-generator.git"
+    "url": "git+https://github.com/kaoyaya/fe-eolinker-api-generator.git"
   },
   "author": "ltinyho",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ltinyho/eolinker-api-generator/issues"
+    "url": "https://github.com/kaoyaya/fe-eolinker-api-generator/issues"
   },
-  "homepage": "https://github.com/ltinyho/eolinker-api-generator#readme",
+  "homepage": "https://github.com/kaoyaya/fe-eolinker-api-generator#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "mkdirp": "^0.5.1",
